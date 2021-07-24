@@ -26,7 +26,7 @@ import goog from "./goog-lib.js";
  */
 'use strict';
 
-import "./block_render_svg_horizontal.js";
+import "./block_render_svg_vertical.js";
 import "./dropdowndiv.js";
 import "./events.js";
 import "./field_angle.js";

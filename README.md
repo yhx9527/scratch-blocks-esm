@@ -1,4 +1,7 @@
-# scratch-blocks
+# scratch-blocks-esm
+### intro
+Transform goog module to esm by [goog2esm](https://github.com/yhx9527/goog2esm).You can use http-server to open test/vertical_playground.html.
+
 #### Scratch Blocks is a library for building creative computing interfaces.
 [![Build Status](https://travis-ci.org/LLK/scratch-blocks.svg?branch=develop)](https://travis-ci.org/LLK/scratch-blocks)
 [![Dependency Status](https://david-dm.org/LLK/scratch-blocks.svg)](https://david-dm.org/LLK/scratch-blocks)

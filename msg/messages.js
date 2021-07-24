@@ -1,3 +1,4 @@
+import Blockly from "../core/_transfer_.js";
 /**
  * @license
  * Visual Blocks Language
@@ -29,9 +30,12 @@
  */
 'use strict';
 
-goog.provide('Blockly.Msg.en');
+import "../core/msg.js";
 
-goog.require('Blockly.Msg');
+/**
+ * namespace declare 
+ */
+Blockly.Msg.en = {};
 
 // Control blocks
 Blockly.Msg.CONTROL_FOREVER = 'forever';
@@ -351,3 +355,4 @@ Blockly.Msg.NEW_BROADCAST_MESSAGE = 'New message';
 Blockly.Msg.NEW_BROADCAST_MESSAGE_TITLE = 'New message name:';
 Blockly.Msg.BROADCAST_MODAL_TITLE = 'New Message';
 Blockly.Msg.DEFAULT_BROADCAST_MESSAGE_NAME = 'message1';
+export default Blockly;

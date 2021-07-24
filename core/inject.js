@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,19 +26,14 @@
  */
 'use strict';
 
-goog.provide('Blockly.inject');
-
-goog.require('Blockly.BlockDragSurfaceSvg');
-goog.require('Blockly.Css');
-goog.require('Blockly.constants');
-goog.require('Blockly.DropDownDiv');
-goog.require('Blockly.Grid');
-goog.require('Blockly.Options');
-goog.require('Blockly.WorkspaceSvg');
-goog.require('Blockly.WorkspaceDragSurfaceSvg');
-goog.require('goog.dom');
-goog.require('goog.ui.Component');
-goog.require('goog.userAgent');
+import "./block_drag_surface.js";
+import "./css.js";
+import "./constants.js";
+import "./dropdowndiv.js";
+import "./grid.js";
+import "./options.js";
+import "./workspace_svg.js";
+import "./workspace_drag_surface_svg.js";
 
 /**
  * Inject a Blockly editor into the specified container element (usually a div).
@@ -489,3 +486,4 @@ Blockly.updateToolbox = function(tree) {
                'use workspace.updateToolbox instead.');
   Blockly.getMainWorkspace().updateToolbox(tree);
 };
+export default Blockly;

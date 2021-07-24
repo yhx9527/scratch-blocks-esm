@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,12 +26,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldNumber');
-
-goog.require('Blockly.FieldTextInput');
-goog.require('Blockly.Touch');
-goog.require('goog.math');
-goog.require('goog.userAgent');
+import "./field_textinput.js";
+import "./touch.js";
 
 /**
  * Class for an editable number field.
@@ -364,3 +362,4 @@ Blockly.FieldNumber.prototype.onHide_ = function() {
 };
 
 Blockly.Field.register('field_number', Blockly.FieldNumber);
+export default Blockly;

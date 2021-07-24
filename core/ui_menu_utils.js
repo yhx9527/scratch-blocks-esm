@@ -1,3 +1,11 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
+
+/**
+ * namespace declare 
+ */
+Blockly.utils.uiMenu = {};
+
 /**
  * @license
  * Visual Blocks Editor
@@ -23,12 +31,6 @@
  * @author fenichel@google.com (Rachel Fenichel)
  */
 'use strict';
-
-/**
- * @name Blockly.utils.uiMenu
- * @namespace
- **/
-goog.provide('Blockly.utils.uiMenu');
 
 
 /**
@@ -66,3 +68,4 @@ Blockly.utils.uiMenu.adjustBBoxesForRTL = function(viewportBBox, anchorBBox,
   viewportBBox.left += menuSize.width;
   viewportBBox.right += menuSize.width;
 };
+export default Blockly;

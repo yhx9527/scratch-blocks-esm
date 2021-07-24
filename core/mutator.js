@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -25,14 +27,11 @@
  */
 'use strict';
 
-goog.provide('Blockly.Mutator');
-
-goog.require('Blockly.Bubble');
-goog.require('Blockly.Events.BlockChange');
-goog.require('Blockly.Events.Ui');
-goog.require('Blockly.Icon');
-goog.require('Blockly.WorkspaceSvg');
-goog.require('goog.dom');
+import "./bubble.js";
+import "./block_events.js";
+import "./ui_events.js";
+import "./icon.js";
+import "./workspace_svg.js";
 
 
 /**
@@ -424,3 +423,4 @@ if (!goog.global['Blockly']['Mutator']) {
   goog.global['Blockly']['Mutator'] = {};
 }
 goog.global['Blockly']['Mutator']['reconnect'] = Blockly.Mutator.reconnect;
+export default Blockly;

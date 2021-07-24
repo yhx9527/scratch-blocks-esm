@@ -1,3 +1,4 @@
+import Blockly from "../core/_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,11 +25,13 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.colour');
+import "../core/blocks.js";
+import "../core/constants.js";
 
-goog.require('Blockly.Blocks');
-
-goog.require('Blockly.constants');
+/**
+ * namespace declare 
+ */
+Blockly.Blocks.colour = {};
 
 /**
  * Pick a random colour.
@@ -59,3 +62,4 @@ Blockly.Blocks['colour_picker'] = {
     });
   }
 };
+export default Blockly;

@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,13 +26,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.Comment');
-
-goog.require('Blockly.Bubble');
-goog.require('Blockly.Events.BlockChange');
-goog.require('Blockly.Events.Ui');
-goog.require('Blockly.Icon');
-goog.require('goog.userAgent');
+import "./bubble.js";
+import "./block_events.js";
+import "./ui_events.js";
+import "./icon.js";
 
 
 /**
@@ -291,3 +290,4 @@ Blockly.Comment.prototype.dispose = function() {
   this.block_.comment = null;
   Blockly.Icon.prototype.dispose.call(this);
 };
+export default Blockly;

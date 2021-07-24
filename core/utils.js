@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -26,17 +28,12 @@
  */
 'use strict';
 
-/**
- * @name Blockly.utils
- * @namespace
- **/
-goog.provide('Blockly.utils');
+import "./touch.js";
 
-goog.require('Blockly.Touch');
-goog.require('goog.dom');
-goog.require('goog.events.BrowserFeature');
-goog.require('goog.math.Coordinate');
-goog.require('goog.userAgent');
+/**
+ * namespace declare 
+ */
+Blockly.utils = {};
 
 
 /**
@@ -946,3 +943,4 @@ Blockly.utils.startsWith = function(str, prefix) {
 Blockly.utils.toRadians = function(angleDegrees) {
   return angleDegrees * Math.PI / 180;
 };
+export default Blockly;

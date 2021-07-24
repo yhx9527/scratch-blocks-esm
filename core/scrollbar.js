@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -23,12 +25,6 @@
  * @author fraser@google.com (Neil Fraser)
  */
 'use strict';
-
-goog.provide('Blockly.Scrollbar');
-goog.provide('Blockly.ScrollbarPair');
-
-goog.require('goog.dom');
-goog.require('goog.events');
 
 
 /**
@@ -873,3 +869,4 @@ Blockly.Scrollbar.prototype.setOrigin = function(x, y) {
     this.originHasChanged_ = true;
   }
 };
+export default Blockly;

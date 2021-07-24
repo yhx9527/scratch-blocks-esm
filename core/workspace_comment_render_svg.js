@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,9 +26,12 @@
  */
 'use strict';
 
-goog.provide('Blockly.WorkspaceCommentSvg.render');
+import "./workspace_comment_svg.js";
 
-goog.require('Blockly.WorkspaceCommentSvg');
+/**
+ * namespace declare 
+ */
+Blockly.WorkspaceCommentSvg.render = {};
 
 /**
  * Radius of the border around the comment.
@@ -721,3 +726,4 @@ Blockly.WorkspaceCommentSvg.prototype.blurFocus = function() {
     }
   }, 0);
 };
+export default Blockly;

@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,15 +26,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldColourSlider');
-
-goog.require('Blockly.Field');
-goog.require('Blockly.DropDownDiv');
-goog.require('goog.dom');
-goog.require('goog.events');
-goog.require('goog.style');
-goog.require('goog.color');
-goog.require('goog.ui.Slider');
+import "./field.js";
+import "./dropdowndiv.js";
 
 /**
  * Class for a slider-based colour input field.
@@ -384,3 +379,4 @@ Blockly.FieldColourSlider.prototype.dispose = function() {
 };
 
 Blockly.Field.register('field_colour_slider', Blockly.FieldColourSlider);
+export default Blockly;

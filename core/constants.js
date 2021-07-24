@@ -1,3 +1,10 @@
+import Blockly from "./_transfer_.js";
+
+/**
+ * namespace declare 
+ */
+Blockly.constants = {};
+
 /**
  * @license
  * Visual Blocks Editor
@@ -23,8 +30,6 @@
  * @author fenichel@google.com (Rachel Fenichel)
  */
 'use strict';
-
-goog.provide('Blockly.constants');
 
 
 /**
@@ -385,3 +390,4 @@ Blockly.StatusButtonState = {
   "READY": "ready",
   "NOT_READY": "not ready",
 };
+export default Blockly;

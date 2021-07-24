@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,13 +26,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Bubble');
-
-goog.require('Blockly.Touch');
-goog.require('Blockly.Workspace');
-goog.require('goog.dom');
-goog.require('goog.math.Coordinate');
-goog.require('goog.userAgent');
+import "./touch.js";
+import "./workspace.js";
 
 
 /**
@@ -662,3 +659,4 @@ Blockly.Bubble.prototype.getRelativeToSurfaceXY = function() {
 Blockly.Bubble.prototype.setAutoLayout = function(enable) {
   this.autoLayout_ = enable;
 };
+export default Blockly;

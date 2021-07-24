@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,16 +26,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Events.VarBase');
-goog.provide('Blockly.Events.VarCreate');
-goog.provide('Blockly.Events.VarDelete');
-goog.provide('Blockly.Events.VarRename');
-
-goog.require('Blockly.Events');
-goog.require('Blockly.Events.Abstract');
-
-goog.require('goog.array');
-goog.require('goog.math.Coordinate');
+import "./events.js";
+import "./events_abstract.js";
 
 
 /**
@@ -257,3 +251,4 @@ Blockly.Events.VarRename.prototype.run = function(forward) {
     workspace.renameVariableById(this.varId, this.oldName);
   }
 };
+export default Blockly;

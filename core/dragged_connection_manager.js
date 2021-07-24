@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,12 +26,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.DraggedConnectionManager');
-
-goog.require('Blockly.BlockAnimations');
-goog.require('Blockly.RenderedConnection');
-
-goog.require('goog.math.Coordinate');
+import "./block_animations.js";
+import "./rendered_connection.js";
 
 
 /**
@@ -258,3 +256,4 @@ Blockly.DraggedConnectionManager.prototype.updateClosest_ = function(dxy) {
   }
   return oldClosestConnection != this.closestConnection_;
 };
+export default Blockly;

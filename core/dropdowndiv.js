@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -25,11 +27,6 @@
  */
 
 'use strict';
-
-goog.provide('Blockly.DropDownDiv');
-
-goog.require('goog.dom');
-goog.require('goog.style');
 
 /**
  * Class for drop-down div.
@@ -406,3 +403,4 @@ Blockly.DropDownDiv.hideWithoutAnimation = function() {
     Blockly.DropDownDiv.onHide_ = null;
   }
 };
+export default Blockly;

@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,13 +26,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Events.Ui');
-
-goog.require('Blockly.Events');
-goog.require('Blockly.Events.Abstract');
-
-goog.require('goog.array');
-goog.require('goog.math.Coordinate');
+import "./events.js";
+import "./events_abstract.js";
 
 /**
  * Class for a UI event.
@@ -89,3 +86,4 @@ Blockly.Events.Ui.prototype.fromJson = function(json) {
   this.newValue = json['newValue'];
   this.blockId = json['blockId'];
 };
+export default Blockly;

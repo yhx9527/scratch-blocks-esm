@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,16 +26,10 @@
  */
 'use strict';
 
-/**
- * @name Blockly.DataCategory
- * @namespace
- **/
-goog.provide('Blockly.DataCategory');
-
-goog.require('Blockly.Blocks');
-goog.require('Blockly.VariableModel');
-goog.require('Blockly.Variables');
-goog.require('Blockly.Workspace');
+import "./blocks.js";
+import "./variable_model.js";
+import "./variables.js";
+import "./workspace.js";
 
 /**
  * Construct the blocks required by the flyout for the variable category.
@@ -488,3 +484,4 @@ Blockly.DataCategory.addSep = function(xmlList) {
   var sep = Blockly.Xml.textToDom(sepText).firstChild;
   xmlList.push(sep);
 };
+export default Blockly;

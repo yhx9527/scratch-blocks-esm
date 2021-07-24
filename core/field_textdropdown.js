@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,12 +26,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldTextDropdown');
-
-goog.require('Blockly.DropDownDiv');
-goog.require('Blockly.FieldDropdown');
-goog.require('Blockly.FieldTextInput');
-goog.require('goog.userAgent');
+import "./dropdowndiv.js";
+import "./field_dropdown.js";
+import "./field_textinput.js";
 
 
 /**
@@ -162,3 +161,4 @@ Blockly.FieldTextDropdown.prototype.showDropdown_ = Blockly.FieldDropdown.protot
 Blockly.FieldTextDropdown.prototype.onHide = Blockly.FieldDropdown.prototype.onHide;
 
 Blockly.Field.register('field_textdropdown', Blockly.FieldTextDropdown);
+export default Blockly;

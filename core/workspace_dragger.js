@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -23,11 +25,6 @@
  * @author fenichel@google.com (Rachel Fenichel)
  */
 'use strict';
-
-goog.provide('Blockly.WorkspaceDragger');
-
-goog.require('goog.math.Coordinate');
-goog.require('goog.asserts');
 
 
 /**
@@ -130,3 +127,4 @@ Blockly.WorkspaceDragger.prototype.drag = function(currentDragDeltaXY) {
 Blockly.WorkspaceDragger.prototype.updateScroll_ = function(x, y) {
   this.workspace_.scrollbar.set(x, y);
 };
+export default Blockly;

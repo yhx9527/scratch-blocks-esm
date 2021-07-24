@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,23 +26,15 @@
  */
 'use strict';
 
+import "./block_events.js";
+import "./scratch_blocks_utils.js";
+import "./utils.js";
+import "./ui_menu_utils.js";
+
 /**
- * @name Blockly.ContextMenu
- * @namespace
+ * namespace declare 
  */
-goog.provide('Blockly.ContextMenu');
-
-goog.require('Blockly.Events.BlockCreate');
-goog.require('Blockly.scratchBlocksUtils');
-goog.require('Blockly.utils');
-goog.require('Blockly.utils.uiMenu');
-
-goog.require('goog.dom');
-goog.require('goog.events');
-goog.require('goog.style');
-goog.require('goog.ui.Menu');
-goog.require('goog.ui.MenuItem');
-goog.require('goog.userAgent');
+Blockly.ContextMenu = {};
 
 
 /**
@@ -517,3 +511,4 @@ Blockly.ContextMenu.workspaceCommentOption = function(ws, e) {
 };
 
 // End helper functions for creating context menu options.
+export default Blockly;

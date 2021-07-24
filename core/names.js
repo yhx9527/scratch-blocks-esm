@@ -1,3 +1,4 @@
+import Blockly from "./_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -23,8 +24,6 @@
  * @author fraser@google.com (Neil Fraser)
  */
 'use strict';
-
-goog.provide('Blockly.Names');
 
 
 /**
@@ -196,3 +195,4 @@ Blockly.Names.prototype.safeName_ = function(name) {
 Blockly.Names.equals = function(name1, name2) {
   return name1.toLowerCase() == name2.toLowerCase();
 };
+export default Blockly;

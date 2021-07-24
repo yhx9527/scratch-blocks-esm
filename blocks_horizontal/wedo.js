@@ -1,3 +1,4 @@
+import Blockly from "../core/_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,11 +25,13 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.wedo');
+import "../core/blocks.js";
+import "../core/colours.js";
 
-goog.require('Blockly.Blocks');
-
-goog.require('Blockly.Colours');
+/**
+ * namespace declare 
+ */
+Blockly.Blocks.wedo = {};
 
 Blockly.Blocks['dropdown_wedo_setcolor'] = {
   /**
@@ -314,3 +317,4 @@ Blockly.Blocks['wedo_whendistanceclose'] = {
     });
   }
 };
+export default Blockly;

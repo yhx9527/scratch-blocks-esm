@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,12 +26,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.WorkspaceCommentSvg');
-
-goog.require('Blockly.Events.CommentCreate');
-goog.require('Blockly.Events.CommentDelete');
-goog.require('Blockly.Events.CommentMove');
-goog.require('Blockly.WorkspaceComment');
+import "./comment_events.js";
+import "./comment_events.js";
+import "./comment_events.js";
+import "./workspace_comment.js";
 
 
 /**
@@ -87,7 +87,7 @@ Blockly.WorkspaceCommentSvg = function(workspace, content, height, width, minimi
       workspace, content, height, width, minimized, opt_id);
 
   this.render();
-}; goog.inherits(Blockly.WorkspaceCommentSvg, Blockly.WorkspaceComment);
+};goog.inherits(Blockly.WorkspaceCommentSvg, Blockly.WorkspaceComment);
 
 /**
  * The width and height to use to size a workspace comment when it is first
@@ -609,3 +609,4 @@ Blockly.WorkspaceCommentSvg.prototype.toXmlWithXY = function(opt_noId) {
   element.setAttribute('w', this.getWidth());
   return element;
 };
+export default Blockly;

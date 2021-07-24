@@ -1,3 +1,4 @@
+import Blockly from "../core/_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,11 +25,13 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.control');
+import "../core/blocks.js";
+import "../core/colours.js";
 
-goog.require('Blockly.Blocks');
-
-goog.require('Blockly.Colours');
+/**
+ * namespace declare 
+ */
+Blockly.Blocks.control = {};
 
 Blockly.Blocks['control_repeat'] = {
   /**
@@ -205,3 +208,4 @@ Blockly.Blocks['control_wait'] = {
     });
   }
 };
+export default Blockly;

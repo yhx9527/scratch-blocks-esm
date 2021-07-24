@@ -1,3 +1,5 @@
+import Blockly from "../core/_transfer_.js";
+import goog from "../core/goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -23,12 +25,15 @@
  */
 'use strict';
 
-goog.provide('Blockly.ScratchBlocks.ProcedureUtils');
+import "../core/blocks.js";
+import "../core/colours.js";
+import "../core/constants.js";
+import "./vertical_extensions.js";
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Colours');
-goog.require('Blockly.constants');
-goog.require('Blockly.ScratchBlocks.VerticalExtensions');
+/**
+ * namespace declare 
+ */
+Blockly.ScratchBlocks.ProcedureUtils = {};
 
 // Serialization and deserialization.
 
@@ -969,3 +974,4 @@ Blockly.Blocks['argument_editor_string_number'] = {
   // Exist on declaration and arguments editors, with different implementations.
   removeFieldCallback: Blockly.ScratchBlocks.ProcedureUtils.removeArgumentCallback_
 };
+export default Blockly;

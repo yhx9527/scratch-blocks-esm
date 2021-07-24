@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,12 +26,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.Connection');
-
-goog.require('Blockly.Events.BlockMove');
-
-goog.require('goog.asserts');
-goog.require('goog.dom');
+import "./block_events.js";
 
 
 /**
@@ -764,3 +761,4 @@ Blockly.Connection.prototype.toString = function() {
   }
   return msg + block.toDevString();
 };
+export default Blockly;

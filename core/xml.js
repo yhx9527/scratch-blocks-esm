@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,17 +26,13 @@
  */
 'use strict';
 
+import "./block_events.js";
+import "./variable_events.js";
+
 /**
- * @name Blockly.Xml
- * @namespace
- **/
-goog.provide('Blockly.Xml');
-
-goog.require('Blockly.Events.BlockCreate');
-goog.require('Blockly.Events.VarCreate');
-
-goog.require('goog.asserts');
-goog.require('goog.dom');
+ * namespace declare 
+ */
+Blockly.Xml = {};
 
 
 /**
@@ -917,3 +915,4 @@ goog.global['Blockly']['Xml']['textToDom'] = Blockly.Xml.textToDom;
 goog.global['Blockly']['Xml']['workspaceToDom'] = Blockly.Xml.workspaceToDom;
 goog.global['Blockly']['Xml']['clearWorkspaceAndLoadFromXml'] =
   Blockly.Xml.clearWorkspaceAndLoadFromXml;
+export default Blockly;

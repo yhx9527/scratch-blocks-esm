@@ -1,3 +1,4 @@
+import Blockly from "../core/_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -20,9 +21,7 @@
 
 'use strict';
 
-goog.provide('Blockly.Blocks.defaultToolbox');
-
-goog.require('Blockly.Blocks');
+import "../core/blocks.js";
 
 /**
  * @fileoverview Provide a default toolbox XML.
@@ -562,3 +561,4 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
     '</block>' +
   '</category>' +
   '</xml>';
+export default Blockly;

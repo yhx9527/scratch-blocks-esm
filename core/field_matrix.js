@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -25,9 +27,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldMatrix');
-
-goog.require('Blockly.DropDownDiv');
+import "./dropdowndiv.js";
 
 /**
  * Class for a matrix field.
@@ -564,3 +564,4 @@ Blockly.FieldMatrix.prototype.dispose_ = function() {
 };
 
 Blockly.Field.register('field_matrix', Blockly.FieldMatrix);
+export default Blockly;

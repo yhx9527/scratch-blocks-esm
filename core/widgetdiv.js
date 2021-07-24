@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -26,16 +28,12 @@
  */
 'use strict';
 
-/**
- * @name Blockly.WidgetDiv
- * @namespace
- **/
-goog.provide('Blockly.WidgetDiv');
+import "./css.js";
 
-goog.require('Blockly.Css');
-goog.require('goog.dom');
-goog.require('goog.dom.TagName');
-goog.require('goog.style');
+/**
+ * namespace declare 
+ */
+Blockly.WidgetDiv = {};
 
 
 /**
@@ -342,3 +340,4 @@ Blockly.WidgetDiv.calculateY_ = function(viewportBBox, anchorBBox, widgetSize) {
     return anchorBBox.bottom;
   }
 };
+export default Blockly;

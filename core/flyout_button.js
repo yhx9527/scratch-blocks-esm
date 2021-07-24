@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -23,11 +25,6 @@
  * @author fenichel@google.com (Rachel Fenichel)
  */
 'use strict';
-
-goog.provide('Blockly.FlyoutButton');
-
-goog.require('goog.dom');
-goog.require('goog.math.Coordinate');
 
 
 /**
@@ -320,3 +317,4 @@ Blockly.FlyoutButton.prototype.onMouseUp_ = function(e) {
     this.callback_(this);
   }
 };
+export default Blockly;

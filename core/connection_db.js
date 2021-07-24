@@ -1,3 +1,4 @@
+import Blockly from "./_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,9 +25,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.ConnectionDB');
-
-goog.require('Blockly.Connection');
+import "./connection.js";
 
 
 /**
@@ -298,3 +297,4 @@ Blockly.ConnectionDB.init = function(workspace) {
   dbList[Blockly.PREVIOUS_STATEMENT] = new Blockly.ConnectionDB();
   workspace.connectionDBList = dbList;
 };
+export default Blockly;

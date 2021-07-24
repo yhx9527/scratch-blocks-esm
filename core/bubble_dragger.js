@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,14 +26,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.BubbleDragger');
-
-goog.require('Blockly.Bubble');
-goog.require('Blockly.Events.CommentMove');
-goog.require('Blockly.WorkspaceCommentSvg');
-
-goog.require('goog.math.Coordinate');
-goog.require('goog.asserts');
+import "./bubble.js";
+import "./comment_events.js";
+import "./workspace_comment_svg.js";
 
 
 /**
@@ -283,3 +280,4 @@ Blockly.BubbleDragger.prototype.moveToDragSurface_ = function() {
   // Execute the move on the top-level SVG component.
   this.dragSurface_.setBlocksAndShow(this.draggingBubble_.getSvgRoot());
 };
+export default Blockly;

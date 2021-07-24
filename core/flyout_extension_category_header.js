@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -25,9 +27,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.FlyoutExtensionCategoryHeader');
-
-goog.require('Blockly.FlyoutButton');
+import "./flyout_button.js";
 
 /**
  * Class for a category header in the flyout for Scratch extensions which can
@@ -157,3 +157,4 @@ Blockly.FlyoutExtensionCategoryHeader.prototype.setImageSrc = function(src) {
 Blockly.FlyoutExtensionCategoryHeader.getExtensionState = function(/* extensionId */) {
   return Blockly.StatusButtonState.NOT_READY;
 };
+export default Blockly;

@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -27,9 +29,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldIconMenu');
-
-goog.require('Blockly.DropDownDiv');
+import "./dropdowndiv.js";
 
 /**
  * Class for an icon menu field.
@@ -305,3 +305,4 @@ Blockly.FieldIconMenu.prototype.onHide_ = function() {
 };
 
 Blockly.Field.register('field_iconmenu', Blockly.FieldIconMenu);
+export default Blockly;

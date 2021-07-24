@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,13 +26,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldLabel');
-
-goog.require('Blockly.Field');
-goog.require('Blockly.Tooltip');
-goog.require('goog.dom');
-goog.require('goog.math.Size');
-goog.require('goog.userAgent');
+import "./field.js";
+import "./tooltip.js";
 
 
 /**
@@ -134,3 +131,4 @@ Blockly.FieldLabel.prototype.setTooltip = function(newTip) {
 };
 
 Blockly.Field.register('field_label', Blockly.FieldLabel);
+export default Blockly;

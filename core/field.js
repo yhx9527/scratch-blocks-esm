@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -26,16 +28,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Field');
-
-goog.require('Blockly.Events.BlockChange');
-goog.require('Blockly.Gesture');
-
-goog.require('goog.asserts');
-goog.require('goog.dom');
-goog.require('goog.math.Size');
-goog.require('goog.style');
-goog.require('goog.userAgent');
+import "./block_events.js";
+import "./gesture.js";
 
 
 /**
@@ -805,3 +799,4 @@ Blockly.Field.prototype.getAbsoluteXY_ = function() {
 Blockly.Field.prototype.referencesVariables = function() {
   return false;
 };
+export default Blockly;

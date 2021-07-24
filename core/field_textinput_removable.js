@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,15 +26,11 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldTextInputRemovable');
-
-goog.require('Blockly.BlockSvg.render');
-goog.require('Blockly.Colours');
-goog.require('Blockly.FieldTextInput');
-goog.require('Blockly.Msg');
-goog.require('Blockly.utils');
-goog.require('goog.dom');
-goog.require('goog.dom.TagName');
+import "./block_render_svg_horizontal.js";
+import "./colours.js";
+import "./field_textinput.js";
+import "./msg.js";
+import "./utils.js";
 
 /**
  * Class for an editable text field displaying a deletion icon when selected.
@@ -103,3 +101,4 @@ Blockly.FieldTextInputRemovable.fromJson = function(options) {
 
 Blockly.Field.register(
     'field_input_removable', Blockly.FieldTextInputRemovable);
+export default Blockly;

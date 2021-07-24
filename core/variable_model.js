@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,11 +26,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.VariableModel');
-
-goog.require('Blockly.Events.VarCreate');
-
-goog.require('goog.string');
+import "./variable_events.js";
 
 
 /**
@@ -114,3 +112,4 @@ Blockly.VariableModel.prototype.getId = function() {
 Blockly.VariableModel.compareByName = function(var1, var2) {
   return Blockly.scratchBlocksUtils.compareStrings(var1.name, var2.name);
 };
+export default Blockly;

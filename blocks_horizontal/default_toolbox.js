@@ -1,3 +1,4 @@
+import Blockly from "../core/_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -20,9 +21,7 @@
 
 'use strict';
 
-goog.provide('Blockly.Blocks.defaultToolbox');
-
-goog.require('Blockly.Blocks');
+import "../core/blocks.js";
 
 /**
  * @fileoverview Provide a default toolbox XML.
@@ -103,7 +102,7 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '<block type="wedo_whendistanceclose"></block>' +
         '</category>' +
         '</xml>';
-        
+
 Blockly.Blocks.defaultToolboxSimple = '<xml id="toolbox-simple" style="display: none">' +
         '<block type="event_whenflagclicked"></block>' +
         '<block type="event_whenbroadcastreceived">' +
@@ -137,3 +136,4 @@ Blockly.Blocks.defaultToolboxSimple = '<xml id="toolbox-simple" style="display: 
         '</value>' +
         '</block>' +
     '</xml>';
+export default Blockly;

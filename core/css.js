@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,15 +26,12 @@
  */
 'use strict';
 
+import "./colours.js";
+
 /**
- * @name Blockly.Css
- * @namespace
+ * namespace declare 
  */
-goog.provide('Blockly.Css');
-
-goog.require('Blockly.Colours');
-
-goog.require('goog.userAgent');
+Blockly.Css = {};
 
 /**
  * List of cursors.
@@ -1348,3 +1347,4 @@ Blockly.Css.CONTENT = [
   '}',
   ''
 ];
+export default Blockly;

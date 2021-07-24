@@ -1,3 +1,4 @@
+import Blockly from "../core/_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,11 +25,13 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.event');
+import "../core/blocks.js";
+import "../core/colours.js";
 
-goog.require('Blockly.Blocks');
-
-goog.require('Blockly.Colours');
+/**
+ * namespace declare 
+ */
+Blockly.Blocks.event = {};
 
 Blockly.Blocks['event_whenflagclicked'] = {
   /**
@@ -183,3 +186,4 @@ Blockly.Blocks['event_broadcast'] = {
     });
   }
 };
+export default Blockly;

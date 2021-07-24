@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,23 +26,17 @@
  */
 'use strict';
 
-goog.provide('Blockly.Flyout');
-
-goog.require('Blockly.Block');
-goog.require('Blockly.Comment');
-goog.require('Blockly.Events');
-goog.require('Blockly.Events.BlockCreate');
-goog.require('Blockly.Events.VarCreate');
-goog.require('Blockly.FlyoutButton');
-goog.require('Blockly.FlyoutExtensionCategoryHeader');
-goog.require('Blockly.Gesture');
-goog.require('Blockly.scratchBlocksUtils');
-goog.require('Blockly.Touch');
-goog.require('Blockly.WorkspaceSvg');
-goog.require('goog.dom');
-goog.require('goog.events');
-goog.require('goog.math.Rect');
-goog.require('goog.userAgent');
+import "./block.js";
+import "./comment.js";
+import "./events.js";
+import "./block_events.js";
+import "./variable_events.js";
+import "./flyout_button.js";
+import "./flyout_extension_category_header.js";
+import "./gesture.js";
+import "./scratch_blocks_utils.js";
+import "./touch.js";
+import "./workspace_svg.js";
 
 
 /**
@@ -921,3 +917,4 @@ Blockly.Flyout.prototype.recycleBlock_ = function(block) {
   block.moveBy(-xy.x, -xy.y);
   this.recycleBlocks_.push(block);
 };
+export default Blockly;

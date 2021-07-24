@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -25,11 +27,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.Events.Abstract');
-
-goog.require('Blockly.Events');
-goog.require('goog.array');
-goog.require('goog.math.Coordinate');
+import "./events.js";
 
 /**
  * Abstract class for an event.
@@ -111,3 +109,4 @@ Blockly.Events.Abstract.prototype.getEventWorkspace_ = function() {
   }
   return workspace;
 };
+export default Blockly;

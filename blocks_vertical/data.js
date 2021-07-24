@@ -1,3 +1,4 @@
+import Blockly from "../core/_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -20,13 +21,17 @@
 
 'use strict';
 
-goog.provide('Blockly.Blocks.data');
-goog.provide('Blockly.Constants.Data');
+import "../core/blocks.js";
+import "../core/colours.js";
+import "../core/constants.js";
+import "./vertical_extensions.js";
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Colours');
-goog.require('Blockly.constants');
-goog.require('Blockly.ScratchBlocks.VerticalExtensions');
+/**
+ * namespace declare 
+ */
+Blockly.Blocks.data = {};
+
+Blockly.Constants.Data = {};
 
 
 Blockly.Blocks['data_variable'] = {
@@ -668,3 +673,4 @@ Blockly.Constants.Data.DELETE_OPTION_CALLBACK_FACTORY = function(block,
     workspace.deleteVariableById(variable.getId());
   };
 };
+export default Blockly;

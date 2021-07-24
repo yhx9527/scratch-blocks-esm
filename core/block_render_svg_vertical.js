@@ -1,3 +1,4 @@
+import Blockly from "./_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,11 +25,14 @@
  */
 'use strict';
 
-goog.provide('Blockly.BlockSvg.render');
+import "./block_svg.js";
+import "./scratch_blocks_utils.js";
+import "./utils.js";
 
-goog.require('Blockly.BlockSvg');
-goog.require('Blockly.scratchBlocksUtils');
-goog.require('Blockly.utils');
+/**
+ * namespace declare 
+ */
+Blockly.BlockSvg.render = {};
 
 
 // UI constants for rendering blocks.
@@ -1730,3 +1734,4 @@ Blockly.BlockSvg.prototype.renderMoveConnections_ = function() {
     }
   }
 };
+export default Blockly;

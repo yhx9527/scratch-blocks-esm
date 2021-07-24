@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -25,9 +27,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldVariableGetter');
-
-goog.require('Blockly.Field');
+import "./field.js";
 
 
 /**
@@ -183,3 +183,4 @@ Blockly.FieldVariableGetter.prototype.referencesVariables = function() {
 };
 
 Blockly.Field.register('field_variable_getter', Blockly.FieldVariableGetter);
+export default Blockly;

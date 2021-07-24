@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -25,9 +27,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldLabelSerializable');
-
-goog.require('Blockly.FieldLabel');
+import "./field_label.js";
 
 
 /**
@@ -123,3 +123,4 @@ Blockly.FieldLabelSerializable.prototype.render_ = function() {
 
 Blockly.Field.register(
     'field_label_serializable', Blockly.FieldLabelSerializable);
+export default Blockly;

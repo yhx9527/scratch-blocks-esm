@@ -1,9 +1,14 @@
+import Blockly from "../../core/_transfer_.js";
 // This file was automatically generated.  Do not modify.
 
 'use strict';
 
-goog.provide('Blockly.Msg.en');
-goog.require('Blockly.Msg');
+import "../../core/msg.js";
+
+/**
+ * namespace declare 
+ */
+Blockly.Msg.en = {};
 
 Blockly.Msg["CONTROL_FOREVER"] = "forever";
 Blockly.Msg["CONTROL_REPEAT"] = "repeat %1";
@@ -288,3 +293,4 @@ Blockly.Msg["NEW_BROADCAST_MESSAGE"] = "New message";
 Blockly.Msg["NEW_BROADCAST_MESSAGE_TITLE"] = "New message name:";
 Blockly.Msg["BROADCAST_MODAL_TITLE"] = "New Message";
 Blockly.Msg["DEFAULT_BROADCAST_MESSAGE_NAME"] = "message1";
+export default Blockly;

@@ -1,3 +1,4 @@
+import Blockly from "./_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,8 +25,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.Options');
-goog.require('Blockly.Colours');
+import "./colours.js";
 
 
 /**
@@ -242,3 +242,4 @@ Blockly.Options.parseToolboxTree = function(tree) {
   }
   return tree;
 };
+export default Blockly;

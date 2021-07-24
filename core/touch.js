@@ -1,3 +1,11 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
+
+/**
+ * namespace declare 
+ */
+Blockly.Touch = {};
+
 /**
  * @license
  * Visual Blocks Editor
@@ -23,16 +31,6 @@
  * @author fenichel@google.com (Rachel Fenichel)
  */
 'use strict';
-
-/**
- * @name Blockly.Touch
- * @namespace
- **/
-goog.provide('Blockly.Touch');
-
-goog.require('goog.events');
-goog.require('goog.events.BrowserFeature');
-goog.require('goog.string');
 
 
 /**
@@ -224,3 +222,4 @@ Blockly.Touch.splitEventByTouches = function(e) {
   }
   return events;
 };
+export default Blockly;

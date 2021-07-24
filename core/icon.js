@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -23,11 +25,6 @@
  * @author fraser@google.com (Neil Fraser)
  */
 'use strict';
-
-goog.provide('Blockly.Icon');
-
-goog.require('goog.dom');
-goog.require('goog.math.Coordinate');
 
 
 /**
@@ -203,3 +200,4 @@ Blockly.Icon.prototype.computeIconLocation = function() {
 Blockly.Icon.prototype.getIconLocation = function() {
   return this.iconXY_;
 };
+export default Blockly;

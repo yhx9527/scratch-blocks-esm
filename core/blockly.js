@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,46 +26,37 @@
  */
 'use strict';
 
-/**
- * The top level namespace used to access the Blockly library.
- * @namespace Blockly
- **/
-goog.provide('Blockly');
-
-goog.require('Blockly.BlockSvg.render');
-goog.require('Blockly.DropDownDiv');
-goog.require('Blockly.Events');
-goog.require('Blockly.FieldAngle');
-goog.require('Blockly.FieldCheckbox');
-goog.require('Blockly.FieldColour');
-goog.require('Blockly.FieldColourSlider');
-// Date picker commented out since it increases footprint by 60%.
-// Add it only if you need it.
-//goog.require('Blockly.FieldDate');
-goog.require('Blockly.FieldDropdown');
-goog.require('Blockly.FieldIconMenu');
-goog.require('Blockly.FieldImage');
-goog.require('Blockly.FieldNote');
-goog.require('Blockly.FieldTextInput');
-goog.require('Blockly.FieldTextInputRemovable');
-goog.require('Blockly.FieldTextDropdown');
-goog.require('Blockly.FieldNumber');
-goog.require('Blockly.FieldNumberDropdown');
-goog.require('Blockly.FieldMatrix');
-goog.require('Blockly.FieldVariable');
-goog.require('Blockly.FieldVerticalSeparator');
-goog.require('Blockly.Generator');
-goog.require('Blockly.Msg');
-goog.require('Blockly.Procedures');
-goog.require('Blockly.ScratchMsgs');
-goog.require('Blockly.Toolbox');
-goog.require('Blockly.Touch');
-goog.require('Blockly.WidgetDiv');
-goog.require('Blockly.WorkspaceSvg');
-goog.require('Blockly.constants');
-goog.require('Blockly.inject');
-goog.require('Blockly.utils');
-goog.require('goog.color');
+import "./block_render_svg_horizontal.js";
+import "./dropdowndiv.js";
+import "./events.js";
+import "./field_angle.js";
+import "./field_checkbox.js";
+import "./field_colour.js";
+import "./field_colour_slider.js";
+import "./field_dropdown.js";
+import "./field_iconmenu.js";
+import "./field_image.js";
+import "./field_note.js";
+import "./field_textinput.js";
+import "./field_textinput_removable.js";
+import "./field_textdropdown.js";
+import "./field_number.js";
+import "./field_numberdropdown.js";
+import "./field_matrix.js";
+import "./field_variable.js";
+import "./field_vertical_separator.js";
+import "./generator.js";
+import "./msg.js";
+import "./procedures.js";
+import "./scratch_msgs.js";
+import "./toolbox.js";
+import "./touch.js";
+import "./widgetdiv.js";
+import "./workspace_svg.js";
+import "./constants.js";
+import "./inject.js";
+import "./utils.js";
+import "./_quote_.js";
 
 
 // Turn off debugging when compiled.
@@ -620,3 +613,4 @@ if (!goog.global['Blockly']) {
   goog.global['Blockly'] = {};
 }
 goog.global['Blockly']['getMainWorkspace'] = Blockly.getMainWorkspace;
+export default Blockly;

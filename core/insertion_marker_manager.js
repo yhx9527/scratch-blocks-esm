@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,13 +26,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.InsertionMarkerManager');
-
-goog.require('Blockly.BlockAnimations');
-goog.require('Blockly.Events.BlockMove');
-goog.require('Blockly.RenderedConnection');
-
-goog.require('goog.math.Coordinate');
+import "./block_animations.js";
+import "./block_events.js";
+import "./rendered_connection.js";
 
 
 /**
@@ -676,3 +674,4 @@ Blockly.InsertionMarkerManager.prototype.connectMarker_ = function() {
 };
 
 /**** End insertion marker display functions ****/
+export default Blockly;

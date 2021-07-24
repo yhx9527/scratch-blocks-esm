@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,16 +26,11 @@
  */
 'use strict';
 
-goog.provide('Blockly.ScratchBlockComment');
-
-goog.require('Blockly.Comment');
-goog.require('Blockly.Events.BlockChange');
-goog.require('Blockly.Events.Ui');
-goog.require('Blockly.Icon');
-goog.require('Blockly.ScratchBubble');
-
-goog.require('goog.math.Coordinate');
-goog.require('goog.userAgent');
+import "./comment.js";
+import "./block_events.js";
+import "./ui_events.js";
+import "./icon.js";
+import "./scratch_bubble.js";
 
 
 /**
@@ -651,3 +648,4 @@ Blockly.ScratchBlockComment.prototype.dispose = function() {
 Blockly.ScratchBlockComment.prototype.focus = function() {
   this.textarea_.focus();
 };
+export default Blockly;

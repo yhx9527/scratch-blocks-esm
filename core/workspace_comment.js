@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,14 +26,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.WorkspaceComment');
-
-goog.require('Blockly.Events.CommentChange');
-goog.require('Blockly.Events.CommentCreate');
-goog.require('Blockly.Events.CommentDelete');
-goog.require('Blockly.Events.CommentMove');
-
-goog.require('goog.math.Coordinate');
+import "./comment_events.js";
+import "./comment_events.js";
+import "./comment_events.js";
+import "./comment_events.js";
 
 
 /**
@@ -430,3 +428,4 @@ Blockly.WorkspaceComment.parseAttributes = function(xml) {
     content: xml.textContent
   };
 };
+export default Blockly;

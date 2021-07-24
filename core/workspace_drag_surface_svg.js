@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -28,12 +30,7 @@
 
 'use strict';
 
-goog.provide('Blockly.WorkspaceDragSurfaceSvg');
-
-goog.require('Blockly.utils');
-
-goog.require('goog.asserts');
-goog.require('goog.math.Coordinate');
+import "./utils.js";
 
 
 /**
@@ -193,3 +190,4 @@ Blockly.WorkspaceDragSurfaceSvg.prototype.setContentsAndShow = function(
   this.SVG_.appendChild(bubbleCanvas);
   this.SVG_.style.display = 'block';
 };
+export default Blockly;

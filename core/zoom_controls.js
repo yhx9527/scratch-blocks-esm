@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,10 +26,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.ZoomControls');
-
-goog.require('Blockly.Touch');
-goog.require('goog.dom');
+import "./touch.js";
 
 
 /**
@@ -299,3 +298,4 @@ Blockly.ZoomControls.prototype.createZoomResetSvg_ = function() {
     e.preventDefault();  // Stop double-clicking from selecting text.
   });
 };
+export default Blockly;

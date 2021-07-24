@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -25,10 +27,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.Generator');
-
-goog.require('Blockly.Block');
-goog.require('goog.asserts');
+import "./block.js";
 
 
 /**
@@ -424,3 +423,4 @@ Blockly.Generator.prototype.scrubNakedValue = function(line) {
   // Optionally override
   return line;
 };
+export default Blockly;

@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,22 +26,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.Toolbox');
-
-goog.require('Blockly.Events.Ui');
-goog.require('Blockly.HorizontalFlyout');
-goog.require('Blockly.Touch');
-goog.require('Blockly.VerticalFlyout');
-goog.require('goog.dom');
-goog.require('goog.dom.TagName');
-goog.require('goog.events');
-goog.require('goog.events.BrowserFeature');
-goog.require('goog.html.SafeHtml');
-goog.require('goog.html.SafeStyle');
-goog.require('goog.math.Rect');
-goog.require('goog.style');
-goog.require('goog.ui.tree.TreeControl');
-goog.require('goog.ui.tree.TreeNode');
+import "./ui_events.js";
+import "./flyout_horizontal.js";
+import "./touch.js";
+import "./flyout_vertical.js";
 
 
 /**
@@ -799,3 +789,4 @@ Blockly.Toolbox.Category.prototype.setColour = function(node) {
     this.secondaryColour_ = '#000000';
   }
 };
+export default Blockly;

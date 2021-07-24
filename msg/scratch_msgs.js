@@ -1,10 +1,14 @@
+import Blockly from "../core/_transfer_.js";
 // This file was automatically generated.  Do not modify.
 
 'use strict';
 
-goog.provide('Blockly.ScratchMsgs.allLocales');
+import "../core/scratch_msgs.js";
 
-goog.require('Blockly.ScratchMsgs');
+/**
+ * namespace declare 
+ */
+Blockly.ScratchMsgs.allLocales = {};
 
 
 Blockly.ScratchMsgs.locales["ab"] =
@@ -20384,3 +20388,4 @@ Blockly.ScratchMsgs.locales["zh-tw"] =
     "DEFAULT_BROADCAST_MESSAGE_NAME": "message1"
 };
 // End of combined translations
+export default Blockly;

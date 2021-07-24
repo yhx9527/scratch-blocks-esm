@@ -1,3 +1,4 @@
+import Blockly from "./_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,11 +25,9 @@
  */
 'use strict';
 
-goog.provide('Blockly.VariableMap');
-
-goog.require('Blockly.Events.VarDelete');
-goog.require('Blockly.Events.VarRename');
-goog.require('Blockly.VariableModel');
+import "./variable_events.js";
+import "./variable_events.js";
+import "./variable_model.js";
 
 
 /**
@@ -413,3 +412,4 @@ Blockly.VariableMap.prototype.getVariableUsesById = function(id) {
   }
   return uses;
 };
+export default Blockly;

@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,19 +26,12 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldTextInput');
-
-goog.require('Blockly.BlockSvg.render');
-goog.require('Blockly.Colours');
-goog.require('Blockly.Field');
-goog.require('Blockly.Msg');
-goog.require('Blockly.scratchBlocksUtils');
-goog.require('Blockly.utils');
-
-goog.require('goog.asserts');
-goog.require('goog.dom');
-goog.require('goog.dom.TagName');
-goog.require('goog.userAgent');
+import "./block_render_svg_horizontal.js";
+import "./colours.js";
+import "./field.js";
+import "./msg.js";
+import "./scratch_blocks_utils.js";
+import "./utils.js";
 
 
 /**
@@ -673,3 +668,4 @@ Blockly.FieldTextInput.nonnegativeIntegerValidator = function(text) {
 };
 
 Blockly.Field.register('field_input', Blockly.FieldTextInput);
+export default Blockly;

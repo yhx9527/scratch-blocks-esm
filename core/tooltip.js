@@ -1,3 +1,11 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
+
+/**
+ * namespace declare 
+ */
+Blockly.Tooltip = {};
+
 /**
  * @license
  * Visual Blocks Editor
@@ -28,15 +36,6 @@
  * @author fraser@google.com (Neil Fraser)
  */
 'use strict';
-
-/**
- * @name Blockly.Tooltip
- * @namespace
- **/
-goog.provide('Blockly.Tooltip');
-
-goog.require('goog.dom');
-goog.require('goog.dom.TagName');
 
 
 /**
@@ -335,3 +334,4 @@ Blockly.Tooltip.show_ = function() {
   Blockly.Tooltip.DIV.style.top = anchorY + 'px';
   Blockly.Tooltip.DIV.style.left = anchorX + 'px';
 };
+export default Blockly;

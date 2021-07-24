@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,12 +26,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldAngle');
-
-goog.require('Blockly.DropDownDiv');
-goog.require('Blockly.FieldTextInput');
-goog.require('goog.math');
-goog.require('goog.userAgent');
+import "./dropdowndiv.js";
+import "./field_textinput.js";
 
 
 /**
@@ -396,3 +394,4 @@ Blockly.FieldAngle.prototype.classValidator = function(text) {
 };
 
 Blockly.Field.register('field_angle', Blockly.FieldAngle);
+export default Blockly;

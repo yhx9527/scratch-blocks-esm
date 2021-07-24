@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,11 +26,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldVerticalSeparator');
-
-goog.require('Blockly.Field');
-goog.require('goog.dom');
-goog.require('goog.math.Size');
+import "./field.js";
 
 
 /**
@@ -159,3 +157,4 @@ Blockly.FieldVerticalSeparator.prototype.updateWidth = function() {
 
 Blockly.Field.register(
     'field_vertical_separator', Blockly.FieldVerticalSeparator);
+export default Blockly;

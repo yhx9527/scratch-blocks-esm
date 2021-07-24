@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,11 +26,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Input');
-
-goog.require('Blockly.Connection');
-goog.require('Blockly.FieldLabel');
-goog.require('goog.asserts');
+import "./connection.js";
+import "./field_label.js";
 
 
 /**
@@ -283,3 +282,4 @@ Blockly.Input.prototype.initOutlinePath = function(svgRoot) {
         svgRoot);
   }
 };
+export default Blockly;

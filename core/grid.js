@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -25,11 +27,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.Grid');
-
-goog.require('Blockly.utils');
-
-goog.require('goog.userAgent');
+import "./utils.js";
 
 
 /**
@@ -225,3 +223,4 @@ Blockly.Grid.createDom = function(rnd, gridOptions, defs) {
   }
   return gridPattern;
 };
+export default Blockly;

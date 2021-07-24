@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,10 +26,6 @@
  * @author fenichel@google.com (Rachel Fenichel)
  */
 'use strict';
-
-goog.provide('Blockly.WorkspaceAudio');
-
-goog.require('goog.userAgent');
 
 
 /**
@@ -168,3 +166,4 @@ Blockly.WorkspaceAudio.prototype.play = function(name, opt_volume) {
     this.parentWorkspace_.getAudioManager().play(name, opt_volume);
   }
 };
+export default Blockly;

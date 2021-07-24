@@ -1,3 +1,4 @@
+import Blockly from "../core/_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,13 +25,14 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.note');
+import "../core/blocks.js";
+import "../core/colours.js";
+import "../core/constants.js";
 
-goog.require('Blockly.Blocks');
-
-goog.require('Blockly.Colours');
-
-goog.require('Blockly.constants');
+/**
+ * namespace declare 
+ */
+Blockly.Blocks.note = {};
 
 Blockly.Blocks['note'] = {
   /**
@@ -55,3 +57,4 @@ Blockly.Blocks['note'] = {
     });
   }
 };
+export default Blockly;

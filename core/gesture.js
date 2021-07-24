@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -25,21 +27,16 @@
  */
 'use strict';
 
-goog.provide('Blockly.Gesture');
-
-goog.require('Blockly.BlockAnimations');
-goog.require('Blockly.BlockDragger');
-goog.require('Blockly.BubbleDragger');
-goog.require('Blockly.constants');
-goog.require('Blockly.Events.Ui');
-goog.require('Blockly.FlyoutDragger');
-goog.require('Blockly.scratchBlocksUtils');
-goog.require('Blockly.Tooltip');
-goog.require('Blockly.Touch');
-goog.require('Blockly.WorkspaceDragger');
-
-goog.require('goog.asserts');
-goog.require('goog.math.Coordinate');
+import "./block_animations.js";
+import "./block_dragger.js";
+import "./bubble_dragger.js";
+import "./constants.js";
+import "./ui_events.js";
+import "./flyout_dragger.js";
+import "./scratch_blocks_utils.js";
+import "./tooltip.js";
+import "./touch.js";
+import "./workspace_dragger.js";
 
 
 /*
@@ -1009,3 +1006,4 @@ Blockly.Gesture.prototype.duplicateOnDrag_ = function() {
   newBlock.select();
   this.targetBlock_ = newBlock;
 };
+export default Blockly;

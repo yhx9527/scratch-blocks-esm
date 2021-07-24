@@ -1,3 +1,4 @@
+import Blockly from "../core/_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -27,10 +28,13 @@
  */
 'use strict';
 
-goog.provide('Blockly.ScratchBlocks.VerticalExtensions');
+import "../core/colours.js";
+import "../core/constants.js";
 
-goog.require('Blockly.Colours');
-goog.require('Blockly.constants');
+/**
+ * namespace declare 
+ */
+Blockly.ScratchBlocks.VerticalExtensions = {};
 
 
 /**
@@ -262,3 +266,4 @@ Blockly.ScratchBlocks.VerticalExtensions.registerAll = function() {
 };
 
 Blockly.ScratchBlocks.VerticalExtensions.registerAll();
+export default Blockly;

@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,19 +26,12 @@
  */
 'use strict';
 
-goog.provide('Blockly.HorizontalFlyout');
-
-goog.require('Blockly.Block');
-goog.require('Blockly.Comment');
-goog.require('Blockly.Events');
-goog.require('Blockly.FlyoutButton');
-goog.require('Blockly.Flyout');
-goog.require('Blockly.WorkspaceSvg');
-goog.require('goog.dom');
-goog.require('goog.dom.animationFrame.polyfill');
-goog.require('goog.events');
-goog.require('goog.math.Rect');
-goog.require('goog.userAgent');
+import "./block.js";
+import "./comment.js";
+import "./events.js";
+import "./flyout_button.js";
+import "./flyout_base.js";
+import "./workspace_svg.js";
 
 
 /**
@@ -473,3 +468,4 @@ Blockly.HorizontalFlyout.prototype.reflowInternal_ = function(blocks) {
     this.targetWorkspace_.resize();
   }
 };
+export default Blockly;

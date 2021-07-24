@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,21 +26,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Events.BlockBase');
-goog.provide('Blockly.Events.BlockChange');
-goog.provide('Blockly.Events.BlockCreate');
-goog.provide('Blockly.Events.BlockDelete');
-goog.provide('Blockly.Events.BlockMove');
-goog.provide('Blockly.Events.Change');  // Deprecated.
-goog.provide('Blockly.Events.Create');  // Deprecated.
-goog.provide('Blockly.Events.Delete');  // Deprecated.
-goog.provide('Blockly.Events.Move');  // Deprecated.
-
-goog.require('Blockly.Events');
-goog.require('Blockly.Events.Abstract');
-
-goog.require('goog.array');
-goog.require('goog.math.Coordinate');
+import "./events.js";
+import "./events_abstract.js";
 
 
 /**
@@ -529,3 +518,4 @@ Blockly.Events.Move.prototype.run = function(forward) {
     }
   }
 };
+export default Blockly;

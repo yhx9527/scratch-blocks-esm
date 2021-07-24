@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,12 +26,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Workspace');
-
-goog.require('Blockly.VariableMap');
-goog.require('Blockly.WorkspaceComment');
-goog.require('goog.array');
-goog.require('goog.math');
+import "./variable_map.js";
+import "./workspace_comment.js";
 
 
 /**
@@ -671,3 +669,4 @@ Blockly.Workspace.prototype['addChangeListener'] =
     Blockly.Workspace.prototype.addChangeListener;
 Blockly.Workspace.prototype['removeChangeListener'] =
     Blockly.Workspace.prototype.removeChangeListener;
+export default Blockly;

@@ -1,3 +1,11 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
+
+/**
+ * namespace declare 
+ */
+Blockly.BlockAnimations = {};
+
 /**
  * @license
  * Visual Blocks Editor
@@ -23,8 +31,6 @@
  * @author fenichel@google.com (Rachel Fenichel)
  */
 'use strict';
-
-goog.provide('Blockly.BlockAnimations');
 
 
 /**
@@ -105,3 +111,4 @@ Blockly.BlockAnimations.disconnectUiEffect = function(
  */
 Blockly.BlockAnimations.disconnectUiStop = function() {
 };
+export default Blockly;

@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -25,14 +27,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Events.DragBlockOutside');
-goog.provide('Blockly.Events.EndBlockDrag');
-
-goog.require('Blockly.Events');
-goog.require('Blockly.Events.BlockBase');
-
-goog.require('goog.array');
-goog.require('goog.math.Coordinate');
+import "./events.js";
+import "./block_events.js";
 
 /**
  * Class for a block drag event. Fired when block dragged into or out of
@@ -129,3 +125,4 @@ Blockly.Events.EndBlockDrag.prototype.fromJson = function(json) {
   this.isOutside = json['isOutside'];
   this.xml = json['xml'];
 };
+export default Blockly;

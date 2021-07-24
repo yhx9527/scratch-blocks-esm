@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,10 +26,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldNumberDropdown');
-
-goog.require('Blockly.FieldTextDropdown');
-goog.require('goog.userAgent');
+import "./field_textdropdown.js";
 
 
 /**
@@ -75,3 +74,4 @@ Blockly.FieldNumberDropdown.fromJson = function(element) {
 };
 
 Blockly.Field.register('field_numberdropdown', Blockly.FieldNumberDropdown);
+export default Blockly;

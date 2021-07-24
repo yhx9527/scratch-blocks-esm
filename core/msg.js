@@ -1,3 +1,11 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
+
+/**
+ * namespace declare 
+ */
+Blockly.Msg = {};
+
 /**
  * @license
  * Visual Blocks Editor
@@ -23,12 +31,6 @@
  * @author scr@google.com (Sheridan Rawlins)
  */
 'use strict';
-
-/**
- * Name space for the Msg singleton.
- * Msg gets populated in the message files.
- */
-goog.provide('Blockly.Msg');
 
 
 /**
@@ -60,3 +62,4 @@ goog.getMsg = function(str, opt_values) {
 goog.getMsg.blocklyMsgMap = {
   'Today': 'TODAY'
 };
+export default Blockly;

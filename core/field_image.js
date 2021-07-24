@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,12 +26,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldImage');
-
-goog.require('Blockly.Field');
-goog.require('goog.dom');
-goog.require('goog.math.Size');
-goog.require('goog.userAgent');
+import "./field.js";
 
 
 /**
@@ -191,3 +188,4 @@ Blockly.FieldImage.prototype.updateWidth = function() {
 };
 
 Blockly.Field.register('field_image', Blockly.FieldImage);
+export default Blockly;

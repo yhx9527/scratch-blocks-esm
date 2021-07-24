@@ -1,3 +1,4 @@
+import Blockly from "./_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,13 +25,12 @@
  */
 'use strict';
 
-/**
- * Name space for the ScratchMsgs singleton.
- * Msg gets populated in the message files.
- */
-goog.provide('Blockly.ScratchMsgs');
+import "./msg.js";
 
-goog.require('Blockly.Msg');
+/**
+ * namespace declare 
+ */
+Blockly.ScratchMsgs = {};
 
 
 /**
@@ -83,3 +83,4 @@ Blockly.ScratchMsgs.translate = function(msgId, defaultMsg, useLocale) {
   }
   return defaultMsg;
 };
+export default Blockly;

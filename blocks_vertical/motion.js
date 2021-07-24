@@ -1,3 +1,4 @@
+import Blockly from "../core/_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -20,12 +21,15 @@
 
 'use strict';
 
-goog.provide('Blockly.Blocks.motion');
+import "../core/blocks.js";
+import "../core/colours.js";
+import "../core/constants.js";
+import "./vertical_extensions.js";
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Colours');
-goog.require('Blockly.constants');
-goog.require('Blockly.ScratchBlocks.VerticalExtensions');
+/**
+ * namespace declare 
+ */
+Blockly.Blocks.motion = {};
 
 
 Blockly.Blocks['motion_movesteps'] = {
@@ -582,3 +586,4 @@ Blockly.Blocks['motion_yscroll'] = {
     });
   }
 };
+export default Blockly;

@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -19,8 +21,6 @@
  */
 
 'use strict';
-
-goog.provide('Blockly.Colours');
 
 Blockly.Colours = {
   // SVG colours: these must be specificed in #RRGGBB style
@@ -145,3 +145,4 @@ Blockly.Colours.overrideColours = function(colours) {
     }
   }
 };
+export default Blockly;

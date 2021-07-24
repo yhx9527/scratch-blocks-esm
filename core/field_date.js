@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,19 +26,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldDate');
-
-goog.require('Blockly.Field');
-goog.require('Blockly.utils');
-
-goog.require('goog.date');
-goog.require('goog.date.DateTime');
-goog.require('goog.dom');
-goog.require('goog.events');
-goog.require('goog.i18n.DateTimeSymbols');
-goog.require('goog.i18n.DateTimeSymbols_he');
-goog.require('goog.style');
-goog.require('goog.ui.DatePicker');
+import "./field.js";
+import "./utils.js";
 
 
 /**
@@ -351,3 +342,4 @@ Blockly.FieldDate.CSS = [
 ];
 
 Blockly.Field.register('field_date', Blockly.FieldDate);
+export default Blockly;

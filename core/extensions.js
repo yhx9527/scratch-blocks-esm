@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -27,16 +29,13 @@
  */
 'use strict';
 
+import "./mutator.js";
+import "./utils.js";
+
 /**
- * @name Blockly.Extensions
- * @namespace
- **/
-goog.provide('Blockly.Extensions');
-
-goog.require('Blockly.Mutator');
-goog.require('Blockly.utils');
-
-goog.require('goog.string');
+ * namespace declare 
+ */
+Blockly.Extensions = {};
 
 
 /**
@@ -448,3 +447,4 @@ Blockly.Extensions.extensionParentTooltip_ = function() {
 };
 Blockly.Extensions.register('parent_tooltip_when_inline',
     Blockly.Extensions.extensionParentTooltip_);
+export default Blockly;

@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,14 +26,10 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldVariable');
-
-goog.require('Blockly.FieldDropdown');
-goog.require('Blockly.Msg');
-goog.require('Blockly.VariableModel');
-goog.require('Blockly.Variables');
-goog.require('goog.asserts');
-goog.require('goog.string');
+import "./field_dropdown.js";
+import "./msg.js";
+import "./variable_model.js";
+import "./variables.js";
 
 
 /**
@@ -383,3 +381,4 @@ Blockly.FieldVariable.prototype.referencesVariables = function() {
 };
 
 Blockly.Field.register('field_variable', Blockly.FieldVariable);
+export default Blockly;

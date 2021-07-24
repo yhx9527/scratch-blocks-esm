@@ -1,3 +1,10 @@
+import Blockly from "./_transfer_.js";
+
+/**
+ * namespace declare 
+ */
+Blockly.scratchBlocksUtils = {};
+
 /**
  * @license
  * Visual Blocks Editor
@@ -23,12 +30,6 @@
  * @author fenichel@google.com (Rachel Fenichel)
  */
 'use strict';
-
-/**
- * @name Blockly.scratchBlocksUtils
- * @namespace
- **/
-goog.provide('Blockly.scratchBlocksUtils');
 
 
 /**
@@ -242,3 +243,4 @@ Blockly.scratchBlocksUtils.duplicateAndDragCallback = function(oldBlock, event) 
     }, 0);
   };
 };
+export default Blockly;

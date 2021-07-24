@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,18 +26,17 @@
  */
 'use strict';
 
-/**
- * @name Blockly.Procedures
- * @namespace
- **/
-goog.provide('Blockly.Procedures');
+import "./blocks.js";
+import "./constants.js";
+import "./block_events.js";
+import "./field.js";
+import "./names.js";
+import "./workspace.js";
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.constants');
-goog.require('Blockly.Events.BlockChange');
-goog.require('Blockly.Field');
-goog.require('Blockly.Names');
-goog.require('Blockly.Workspace');
+/**
+ * namespace declare 
+ */
+Blockly.Procedures = {};
 
 
 /**
@@ -575,3 +576,4 @@ Blockly.Procedures.deleteProcedureDefCallback = function(procCode,
 
   return true;
 };
+export default Blockly;

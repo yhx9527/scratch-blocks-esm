@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -23,11 +25,6 @@
  * @author fraser@google.com (Neil Fraser)
  */
 'use strict';
-
-goog.provide('Blockly.Trashcan');
-
-goog.require('goog.dom');
-goog.require('goog.math.Rect');
 
 
 /**
@@ -341,3 +338,4 @@ Blockly.Trashcan.prototype.click = function() {
   }
   console.log('TODO: Inspect trash.');
 };
+export default Blockly;

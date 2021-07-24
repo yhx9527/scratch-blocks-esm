@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,14 +26,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.ScratchBubble');
-
-goog.require('Blockly.Touch');
-goog.require('Blockly.Workspace');
-goog.require('goog.dom');
-goog.require('goog.math');
-goog.require('goog.math.Coordinate');
-goog.require('goog.userAgent');
+import "./touch.js";
+import "./workspace.js";
 
 
 /**
@@ -694,3 +690,4 @@ Blockly.ScratchBubble.prototype.dispose = function() {
   this.minimizeArrow_ = null;
   this.deleteIcon_ = null;
 };
+export default Blockly;

@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,9 +26,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldCheckbox');
-
-goog.require('Blockly.Field');
+import "./field.js";
 
 
 /**
@@ -131,3 +131,4 @@ Blockly.FieldCheckbox.prototype.showEditor_ = function() {
 };
 
 Blockly.Field.register('field_checkbox', Blockly.FieldCheckbox);
+export default Blockly;

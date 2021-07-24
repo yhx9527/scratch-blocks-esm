@@ -1,3 +1,4 @@
+import Blockly from "../core/_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,13 +25,14 @@
  */
 'use strict';
 
-goog.provide('Blockly.Blocks.math');
+import "../core/blocks.js";
+import "../core/colours.js";
+import "../core/constants.js";
 
-goog.require('Blockly.Blocks');
-
-goog.require('Blockly.Colours');
-
-goog.require('Blockly.constants');
+/**
+ * namespace declare 
+ */
+Blockly.Blocks.math = {};
 
 Blockly.Blocks['math_number'] = {
   /**
@@ -152,3 +154,4 @@ Blockly.Blocks['math_angle'] = {
     });
   }
 };
+export default Blockly;

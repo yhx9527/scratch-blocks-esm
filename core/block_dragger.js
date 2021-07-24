@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,16 +26,11 @@
  */
 'use strict';
 
-goog.provide('Blockly.BlockDragger');
-
-goog.require('Blockly.BlockAnimations');
-goog.require('Blockly.Events.BlockMove');
-goog.require('Blockly.Events.DragBlockOutside');
-goog.require('Blockly.Events.EndBlockDrag');
-goog.require('Blockly.InsertionMarkerManager');
-
-goog.require('goog.math.Coordinate');
-goog.require('goog.asserts');
+import "./block_animations.js";
+import "./block_events.js";
+import "./scratch_events.js";
+import "./scratch_events.js";
+import "./insertion_marker_manager.js";
 
 
 /**
@@ -419,3 +416,4 @@ Blockly.BlockDragger.prototype.dragIcons_ = function(dxy) {
     data.icon.setIconLocation(goog.math.Coordinate.sum(data.location, dxy));
   }
 };
+export default Blockly;

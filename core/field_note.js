@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,12 +26,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldNote');
-
-goog.require('Blockly.DropDownDiv');
-goog.require('Blockly.FieldTextInput');
-goog.require('goog.math');
-goog.require('goog.userAgent');
+import "./dropdowndiv.js";
+import "./field_textinput.js";
 
 /**
  * Class for a note input field, for selecting a musical note on a piano.
@@ -848,3 +846,4 @@ Blockly.FieldNote.prototype.classValidator = function(text) {
 };
 
 Blockly.Field.register('field_note', Blockly.FieldNote);
+export default Blockly;

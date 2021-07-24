@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,17 +26,15 @@
  */
 'use strict';
 
-/**
- * @name Blockly.Variables
- * @namespace
- **/
-goog.provide('Blockly.Variables');
+import "./blocks.js";
+import "./constants.js";
+import "./variable_model.js";
+import "./workspace.js";
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.constants');
-goog.require('Blockly.VariableModel');
-goog.require('Blockly.Workspace');
-goog.require('goog.string');
+/**
+ * namespace declare 
+ */
+Blockly.Variables = {};
 
 
 /**
@@ -672,3 +672,4 @@ Blockly.Variables.getAddedVariables = function(workspace, originalVariables) {
   }
   return addedVariables;
 };
+export default Blockly;

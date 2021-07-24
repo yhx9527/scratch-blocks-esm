@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,38 +26,27 @@
  */
 'use strict';
 
-goog.provide('Blockly.WorkspaceSvg');
-
-// TODO(scr): Fix circular dependencies
-//goog.require('Blockly.BlockSvg');
-goog.require('Blockly.Colours');
-goog.require('Blockly.ConnectionDB');
-goog.require('Blockly.constants');
-goog.require('Blockly.DataCategory');
-goog.require('Blockly.DropDownDiv');
-goog.require('Blockly.Events.BlockCreate');
-goog.require('Blockly.Gesture');
-goog.require('Blockly.Grid');
-goog.require('Blockly.Options');
-goog.require('Blockly.scratchBlocksUtils');
-goog.require('Blockly.ScrollbarPair');
-goog.require('Blockly.Touch');
-goog.require('Blockly.Trashcan');
-//goog.require('Blockly.VerticalFlyout');
-goog.require('Blockly.Workspace');
-goog.require('Blockly.WorkspaceAudio');
-goog.require('Blockly.WorkspaceComment');
-goog.require('Blockly.WorkspaceCommentSvg');
-goog.require('Blockly.WorkspaceCommentSvg.render');
-goog.require('Blockly.WorkspaceDragSurfaceSvg');
-goog.require('Blockly.Xml');
-goog.require('Blockly.ZoomControls');
-
-goog.require('goog.array');
-goog.require('goog.dom');
-goog.require('goog.math.Coordinate');
-goog.require('goog.userAgent');
-goog.require('goog.math.Rect');
+import "./colours.js";
+import "./connection_db.js";
+import "./constants.js";
+import "./data_category.js";
+import "./dropdowndiv.js";
+import "./block_events.js";
+import "./gesture.js";
+import "./grid.js";
+import "./options.js";
+import "./scratch_blocks_utils.js";
+import "./scrollbar.js";
+import "./touch.js";
+import "./trashcan.js";
+import "./workspace.js";
+import "./workspace_audio.js";
+import "./workspace_comment.js";
+import "./workspace_comment_svg.js";
+import "./workspace_comment_render_svg.js";
+import "./workspace_drag_surface_svg.js";
+import "./xml.js";
+import "./zoom_controls.js";
 
 /**
  * Class for a workspace.  This is an onscreen area with optional trashcan,
@@ -717,7 +708,7 @@ Blockly.WorkspaceSvg.prototype.updateScreenCalculationsIfScrolled
     this.lastRecordedPageScroll_ = currScroll;
     this.updateScreenCalculations_();
   }
-}; /* eslint-enable indent */
+};/* eslint-enable indent */
 
 /**
  * Get the SVG element that forms the drawing surface.
@@ -2265,3 +2256,4 @@ Blockly.WorkspaceSvg.prototype.getGrid = function() {
 // Export symbols that would otherwise be renamed by Closure compiler.
 Blockly.WorkspaceSvg.prototype['setVisible'] =
     Blockly.WorkspaceSvg.prototype.setVisible;
+export default Blockly;

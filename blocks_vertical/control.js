@@ -1,3 +1,4 @@
+import Blockly from "../core/_transfer_.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -20,11 +21,14 @@
 
 'use strict';
 
-goog.provide('Blockly.Blocks.control');
+import "../core/blocks.js";
+import "../core/colours.js";
+import "./vertical_extensions.js";
 
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Colours');
-goog.require('Blockly.ScratchBlocks.VerticalExtensions');
+/**
+ * namespace declare 
+ */
+Blockly.Blocks.control = {};
 
 
 Blockly.Blocks['control_forever'] = {
@@ -529,3 +533,4 @@ Blockly.Blocks['control_all_at_once'] = {
     });
   }
 };
+export default Blockly;

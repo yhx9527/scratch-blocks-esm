@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,29 +26,23 @@
  */
 'use strict';
 
-goog.provide('Blockly.Block');
-
-goog.require('Blockly.Blocks');
-goog.require('Blockly.Colours');
-goog.require('Blockly.Comment');
-goog.require('Blockly.ScratchBlockComment');
-goog.require('Blockly.Connection');
-goog.require('Blockly.Events.BlockChange');
-goog.require('Blockly.Events.BlockCreate');
-goog.require('Blockly.Events.BlockDelete');
-goog.require('Blockly.Events.BlockMove');
-goog.require('Blockly.Extensions');
-goog.require('Blockly.FieldLabelSerializable');
-goog.require('Blockly.FieldVariableGetter');
-goog.require('Blockly.Input');
-goog.require('Blockly.Mutator');
-goog.require('Blockly.Warning');
-goog.require('Blockly.Workspace');
-goog.require('Blockly.Xml');
-goog.require('goog.array');
-goog.require('goog.asserts');
-goog.require('goog.math.Coordinate');
-goog.require('goog.string');
+import "./blocks.js";
+import "./colours.js";
+import "./comment.js";
+import "./scratch_block_comment.js";
+import "./connection.js";
+import "./block_events.js";
+import "./block_events.js";
+import "./block_events.js";
+import "./block_events.js";
+import "./extensions.js";
+import "./field_label_serializable.js";
+import "./field_variable_getter.js";
+import "./input.js";
+import "./mutator.js";
+import "./warning.js";
+import "./workspace.js";
+import "./xml.js";
 
 
 /**
@@ -1809,3 +1805,4 @@ Blockly.Block.prototype.toDevString = function() {
   }
   return msg;
 };
+export default Blockly;

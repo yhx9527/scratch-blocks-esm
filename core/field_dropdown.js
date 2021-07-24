@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -26,16 +28,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.FieldDropdown');
-
-goog.require('Blockly.Field');
-goog.require('Blockly.DropDownDiv');
-goog.require('goog.dom');
-goog.require('goog.events');
-goog.require('goog.style');
-goog.require('goog.ui.Menu');
-goog.require('goog.ui.MenuItem');
-goog.require('goog.userAgent');
+import "./field.js";
+import "./dropdowndiv.js";
 
 
 /**
@@ -481,3 +475,4 @@ Blockly.FieldDropdown.prototype.dispose = function() {
 };
 
 Blockly.Field.register('field_dropdown', Blockly.FieldDropdown);
+export default Blockly;

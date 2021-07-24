@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -29,10 +31,7 @@
 
 'use strict';
 
-goog.provide('Blockly.BlockDragSurfaceSvg');
-goog.require('Blockly.utils');
-goog.require('goog.asserts');
-goog.require('goog.math.Coordinate');
+import "./utils.js";
 
 
 /**
@@ -297,3 +296,4 @@ Blockly.BlockDragSurfaceSvg.prototype.clearAndHide = function(opt_newSurface) {
   var injectionDiv = document.getElementsByClassName('injectionDiv')[0];
   injectionDiv.style.overflow = 'hidden';
 };
+export default Blockly;

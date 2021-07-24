@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,24 +26,17 @@
  */
 'use strict';
 
-goog.provide('Blockly.BlockSvg');
-
-goog.require('Blockly.Block');
-goog.require('Blockly.BlockAnimations');
-goog.require('Blockly.ContextMenu');
-goog.require('Blockly.Events.Ui');
-goog.require('Blockly.Events.BlockMove');
-goog.require('Blockly.Grid');
-goog.require('Blockly.RenderedConnection');
-goog.require('Blockly.scratchBlocksUtils');
-goog.require('Blockly.Tooltip');
-goog.require('Blockly.Touch');
-goog.require('Blockly.utils');
-
-goog.require('goog.Timer');
-goog.require('goog.asserts');
-goog.require('goog.dom');
-goog.require('goog.math.Coordinate');
+import "./block.js";
+import "./block_animations.js";
+import "./contextmenu.js";
+import "./ui_events.js";
+import "./block_events.js";
+import "./grid.js";
+import "./rendered_connection.js";
+import "./scratch_blocks_utils.js";
+import "./tooltip.js";
+import "./touch.js";
+import "./utils.js";
 
 
 /**
@@ -1312,3 +1307,4 @@ Blockly.BlockSvg.prototype.scheduleSnapAndBump = function() {
     Blockly.Events.setGroup(false);
   }, Blockly.BUMP_DELAY);
 };
+export default Blockly;

@@ -1,3 +1,5 @@
+import Blockly from "./_transfer_.js";
+import goog from "./goog-lib.js";
 /**
  * @license
  * Visual Blocks Editor
@@ -24,9 +26,7 @@
  */
 'use strict';
 
-goog.provide('Blockly.RenderedConnection');
-
-goog.require('Blockly.Connection');
+import "./connection.js";
 
 
 /**
@@ -415,3 +415,4 @@ Blockly.RenderedConnection.prototype.onCheckChanged_ = function() {
     this.sourceBlock_.bumpNeighbours_();
   }
 };
+export default Blockly;
